@@ -1,0 +1,183 @@
+************* Module account.tests
+account/tests.py:1: [W0611(unused-import), ] Unused TestCase imported from django.test
+************* Module account.views
+account/views.py:1: [W0611(unused-import), ] Unused render imported from django.shortcuts
+************* Module account.migrations.0001_initial
+account/migrations/0001_initial.py:27: [C0301(line-too-long), ] Line too long (195/160)
+************* Module workflow.tests
+workflow/tests.py:1: [W0611(unused-import), ] Unused TestCase imported from django.test
+************* Module workflow.views
+workflow/views.py:1: [W0611(unused-import), ] Unused render imported from django.shortcuts
+************* Module feedback.tests
+feedback/tests.py:1: [W0611(unused-import), ] Unused TestCase imported from django.test
+************* Module feedback.views
+feedback/views.py:1: [W0611(unused-import), ] Unused render imported from django.shortcuts
+************* Module feedback.models
+feedback/models.py:32: [C0303(trailing-whitespace), ] Trailing whitespace
+************* Module feedback.migrations.0001_initial
+feedback/migrations/0001_initial.py:37: [C0301(line-too-long), ] Line too long (165/160)
+************* Module feedback.migrations.0002_auto_20170210_1835
+feedback/migrations/0002_auto_20170210_1835.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==account.migrations.0001_initial:2
+==feedback.migrations.0001_initial:2
+from __future__ import unicode_literals
+
+from django.conf import settings
+from django.db import migrations, models
+import django.db.models.deletion
+
+
+class Migration(migrations.Migration):
+
+    initial = True
+
+    dependencies = [
+
+
+Report
+======
+257 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |29     |29         |=          |20.69       |27.59    |
++---------+-------+-----------+-----------+------------+---------+
+|class    |33     |33         |=          |36.36       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |10     |10         |=          |80.00       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    account 
+      \-models (account.admin)
+    django 
+      \-apps (feedback.apps,account.apps,workflow.apps)
+      \-conf (feedback.migrations.0001_initial,account.migrations.0001_initial,feedback.models,account.models)
+      \-contrib 
+      | \-admin (feedback.admin,account.admin,workflow.admin)
+      | \-auth 
+      |   \-models (account.admin)
+      \-db 
+      | \-migrations (workflow.migrations.0001_initial,account.migrations.0002_auto_20170212_2128,feedback.migrations.0004_auto_20170212_2128,account.migrations.0001_initial,feedback.migrations.0001_initial,workflow.migrations.0002_auto_20170210_1835,feedback.migrations.0002_auto_20170210_1835,feedback.migrations.0003_auto_20170212_1915)
+      | \-models (workflow.models,feedback.models,account.migrations.0002_auto_20170212_2128,feedback.migrations.0004_auto_20170212_2128,account.migrations.0001_initial,feedback.migrations.0001_initial,workflow.migrations.0001_initial,feedback.migrations.0003_auto_20170212_1915,feedback.admin,account.models)
+      |   \-deletion (workflow.migrations.0001_initial,account.migrations.0001_initial,feedback.migrations.0001_initial)
+      \-forms (feedback.admin,account.admin)
+      \-shortcuts (account.views,workflow.views,feedback.views)
+      \-test (account.tests,feedback.tests,workflow.tests)
+      \-utils 
+        \-translation (feedback.admin,workflow.models,account.admin,feedback.models,account.models)
+    feedback 
+      \-models (feedback.admin)
+    workflow 
+      \-models (feedback.models,workflow.admin)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |477    |61.31 |477      |=          |
++----------+-------+------+---------+-----------+
+|docstring |154    |19.79 |154      |=          |
++----------+-------+------+---------+-----------+
+|comment   |25     |3.21  |25       |=          |
++----------+-------+------+---------+-----------+
+|empty     |122    |15.68 |122      |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |12    |12       |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |1.602 |1.602    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |3      |3        |=          |
++-----------+-------+---------+-----------+
+|refactor   |1      |1        |=          |
++-----------+-------+---------+-----------+
+|warning    |6      |6        |=          |
++-----------+-------+---------+-----------+
+|error      |0      |1        |-1.00      |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++--------------------------------------------+------+--------+---------+-----------+
+|module                                      |error |warning |refactor |convention |
++============================================+======+========+=========+===========+
+|workflow.views                              |0.00  |16.67   |0.00     |0.00       |
++--------------------------------------------+------+--------+---------+-----------+
+|workflow.tests                              |0.00  |16.67   |0.00     |0.00       |
++--------------------------------------------+------+--------+---------+-----------+
+|feedback.views                              |0.00  |16.67   |0.00     |0.00       |
++--------------------------------------------+------+--------+---------+-----------+
+|feedback.tests                              |0.00  |16.67   |0.00     |0.00       |
++--------------------------------------------+------+--------+---------+-----------+
+|account.views                               |0.00  |16.67   |0.00     |0.00       |
++--------------------------------------------+------+--------+---------+-----------+
+|account.tests                               |0.00  |16.67   |0.00     |0.00       |
++--------------------------------------------+------+--------+---------+-----------+
+|feedback.migrations.0002_auto_20170210_1835 |0.00  |0.00    |100.00   |0.00       |
++--------------------------------------------+------+--------+---------+-----------+
+|feedback.models                             |0.00  |0.00    |0.00     |33.33      |
++--------------------------------------------+------+--------+---------+-----------+
+|feedback.migrations.0001_initial            |0.00  |0.00    |0.00     |33.33      |
++--------------------------------------------+------+--------+---------+-----------+
+|account.migrations.0001_initial             |0.00  |0.00    |0.00     |33.33      |
++--------------------------------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++--------------------+------------+
+|message id          |occurrences |
++====================+============+
+|unused-import       |6           |
++--------------------+------------+
+|line-too-long       |2           |
++--------------------+------------+
+|trailing-whitespace |1           |
++--------------------+------------+
+|duplicate-code      |1           |
++--------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 9.61/10 (previous run: 9.42/10, +0.19)
+

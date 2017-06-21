@@ -1,0 +1,8 @@
+Django==1.9.11
+MySQL-python==1.2.5
+PyMySQL==0.7.9
+django-jenkins==0.110.0
+coverage==4.3.4
+pylint==1.6.5
+pep8==1.6.2
+pyflakes==0.9.2
