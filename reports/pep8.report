@@ -60,8 +60,8 @@ feedback/admin.py:24:1: E302 expected 2 blank lines, found 1
 feedback/admin.py:29:80: E501 line too long (95 > 79 characters)
 feedback/admin.py:30:80: E501 line too long (86 > 79 characters)
 feedback/models.py:7:1: E302 expected 2 blank lines, found 1
+feedback/models.py:21:1: W293 blank line contains whitespace
 feedback/models.py:24:80: E501 line too long (83 > 79 characters)
-feedback/models.py:32:34: W291 trailing whitespace
 feedback/models.py:70:80: E501 line too long (84 > 79 characters)
 feedback/models.py:71:80: E501 line too long (88 > 79 characters)
 feedback/models.py:73:80: E501 line too long (85 > 79 characters)
