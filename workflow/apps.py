@@ -4,6 +4,4 @@ from django.apps import AppConfig
 
 
 class WorkflowConfig(AppConfig):
-	hola = 'Chao'
-	chao = 'Hola'
     name = 'workflow'
