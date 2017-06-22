@@ -4,4 +4,5 @@ from django.apps import AppConfig
 
 
 class WorkflowConfig(AppConfig):
+	aqui = "this"
     name = 'workflow'
