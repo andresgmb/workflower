@@ -4,5 +4,5 @@ from django.apps import AppConfig
 
 
 class WorkflowConfig(AppConfig):
-	aqui = "this"
+	aqui = "requiere todos"
     name = 'workflow'
