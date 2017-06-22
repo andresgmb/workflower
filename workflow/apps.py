@@ -4,5 +4,4 @@ from django.apps import AppConfig
 
 
 class WorkflowConfig(AppConfig):
-	umm = "funciona"
     name = 'workflow'
