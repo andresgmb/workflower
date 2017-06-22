@@ -25,7 +25,7 @@ CONFIG = {
         'default': {
             'name': 'workflower',
             'user': 'root',
-            'password': 'destacame',
+            'password': 'destacameX',
             'port': '',
             'host': ''
         }
